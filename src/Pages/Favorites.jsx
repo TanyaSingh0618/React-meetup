@@ -8,7 +8,7 @@ function Favorites() {
     if (FavCTX.totalFav === 0) {
         content = <h1>EMPTY NO FAV HERE</h1>
     } else {
-        content = <MeetupList meetups={FavCTX} />
+        content = <MeetupList meetups={FavCTX.favKey} />
     }
     return (
         <section>
